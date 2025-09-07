@@ -52,7 +52,7 @@ const showMore = ref(false)
   list-style: none;
   border-radius: 4px;
   margin-top: 1rem;
-  background-color: #f9f9f9;
+  background-color: var(--vt-c-divider-light-2);
   transition: background-color 0.2s ease-in-out;
 
   .wrapper {
@@ -105,7 +105,7 @@ const showMore = ref(false)
 }
 
 .list-item:hover {
-  background-color: #e0e0e0;
+  background-color: var(--vt-c-divider-light-1);
   cursor: pointer;
 }
 </style>
