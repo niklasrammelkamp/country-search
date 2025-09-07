@@ -6,7 +6,7 @@ import { getCountriesByName } from '@yusifaliyevpro/countries'
 
 const searchQuery = ref('')
 const countries = ref<CustomCountriesType['items']>([])
-const loading = ref(true)
+const loading = ref(false)
 const error = ref<string | null>(null)
 
 const fetchCountries = async () => {

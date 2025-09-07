@@ -11,16 +11,6 @@ const showMore = ref(false)
 
 <template>
   <li class="list-item">
-    <!-- <details>
-      <summary>
-        <p>{{ item.flag }}</p>
-        <p>{{ item.name.common }}</p>
-      </summary>
-      <p>Hauptstadt: {{ item.capital ? item.capital[0] : 'Keine Hauptstadt' }}</p>
-      <p>Bevölkerung: {{ item.population.toLocaleString() }}</p>
-      <p>Region: {{ item.region }}</p>
-    </details> -->
-
     <button @click="showMore = !showMore" class="wrapper">
       <div class="summary">
         <p role="image" :aria-label="`Flagge von ${item.name.common}`">{{ item.flag }}</p>
